@@ -98,3 +98,19 @@ O projeto segue uma arquitetura MTV (Model, Templates, Views).
 * **Constants** guardam constantes que são importantes para a aplicação. 
 
 ![Screenshot from 2021-09-05 17-21-44](https://user-images.githubusercontent.com/80683232/132140410-1c9da617-a91d-4d49-bf2e-6c5a35bd0bc6.png)
+
+## Chamadas de API
+* 'todo/api/token/' - verifica se o usuário inseriu credenciais válidas e retorna um par de tokens ('accesstoken', 'refreshtoken')
+* 'todo/api/token/refresh/' - recebe o 'refreshtoken' e se ele for válido, ele retorna um novo 'accesstoken'
+* 'todo/api/token/verify/' - verifica se o 'accesstoken' é válido e autentifica o usuário.
+* 'todo/api/user/ - retorna os dados do cartão do usuário autenticado (número do cartão, id do cartão)
+* 'todo/api/card/' - retorna outras informações do cartão usuário autenticado (validade, mensagem)
+* 'todo/api/extract/' - retorna o extrato das trasações realizadas no cartão
+* 'todo/api/' - retorna todos os usuários do banco de dados
+
+## Autentificação
+Para a autentificação dos usuários, é utilizado JSON Web Token (JWT). O usuário, após ter digitado credenciais válidas, recebe um par de tokens que são instalados no navegador na forma de cookies. Os tokens são 'accesstoken', 'refreshtoken'. O primeiro vai autentificar o usuário, porém, ele tem uma validade curta de somente 5 minutos. O segundo token tem uma validade mais prolongada de 1 dia e vai ser utilizado para resgatar um novo 'accesstoken' quando ele expirar. 
+
+Para verificar se o usuário tem um 'accesstoken' válido, quando a página carrega pela primeira vez, é feita uma requisição para 'todo/api/token/verify/' passando o valor do 'accesstoken' e se for valido o usuário será dado com autenticado e será redirecionado para a página do cartão. Caso contrário, será renderizado a página de login. Outro momento em que é feita a verificação do token de acesso, é após o usuário ter feito o login com credenciais válidas e após ter recebido seu par de tokens.
+
+Como o token de acesso tem uma validade curta, a requisição para obter um novo token é chamada a cada 4 minutos passando como parâmetro o valor do 'refreshtoken'.
