@@ -48,7 +48,7 @@ npm install
 python3 manage.py runserver
 ```
 
-**Em ou outro terminal:**
+**Em outro terminal:**
 1. Mudar para o diretório front_end
 2. Rodar o client
 ```
