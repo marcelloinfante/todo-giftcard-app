@@ -71,7 +71,7 @@ Voilà! Agora você terá acesso as informações do cartão e das transações 
  1. Acesse http://127.0.0.1:8000/admin/
  2. No 'Username', digite 'teste'
  3. No 'Password', digite 'teste123'
- 4. Clique em 'Login'
+ 4. Clique em 'Log in'
  5. No painel do administrador, você pode adicionar e remover cartões no 'Users'
  6. Você pode adicionar ou mudar as informações dos cartões no 'Card informations'
  7. Você pode adicionar ou mudar as transações no 'Extract'
@@ -82,7 +82,7 @@ Voilà! Agora você terá acesso as informações do cartão e das transações 
 O projeto segue uma arquitetura MTV (Model, Templates, Views).
 * **Models** são responsáveis por definir quais serão as tabelas, variáveis e tipos das variáveis que serão armazenadas no banco de dados.
 * **Templates** são as interfaces que serão mostradas para o usuário para ele interagir com a aplicação.
-* **Views** são funções que recebem um request do client e retoram um response. Geralmente, o response pode tomar forma de um templates renderizados, arquivos JSON, no caso de APIs e status do request.
+* **Views** são funções que recebem um request do client e retoram um response. Geralmente, o response pode tomar forma de um templates renderizados, arquivos JSON, no caso de APIs e status do request. Nesse projeto, utilizamos class-based views
 * ***Serializers** são responsáveis por transformar uma querie do banco de dados em um arquivo JSON que pode ser interpretado pelo front_end.
 * ***Urls** são as rotas que indicam qual view deve ser ativada de acordo com a url que fez a requisição.
 * ***Settings** realizam as configurações do projeto.
