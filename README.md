@@ -114,3 +114,6 @@ Para a autentificação dos usuários, é utilizado JSON Web Token (JWT). O usu�
 Para verificar se o usuário tem um 'accesstoken' válido, quando a página carrega pela primeira vez, é feita uma requisição para 'todo/api/token/verify/' passando o valor do 'accesstoken' e se for valido o usuário será dado com autenticado e será redirecionado para a página do cartão. Caso contrário, será renderizado a página de login. Outro momento em que é feita a verificação do token de acesso, é após o usuário ter feito o login com credenciais válidas e após ter recebido seu par de tokens.
 
 Como o token de acesso tem uma validade curta, a requisição para obter um novo token é chamada a cada 4 minutos passando como parâmetro o valor do 'refreshtoken'.
+
+## Integração com API de Transações Externa
+Para ter acesso à API externa que contém todas as transação, foi feita uma requisição por meio do Axios. Foi necessário colocar o valor do 'x-api-key' no headers da requisição para conseguir ter acesso. Após o sucesso na recuperação dos dados da API, o front renderiza a lista de todas as transação incluindo as transações registradas na API local do Django. O extrato das transações da API externa aparecem em todos cartões, no entanto, o extrato da API interna é personalidado para cada cartão.
