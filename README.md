@@ -1,8 +1,9 @@
 # Todo App Gift Card
 
-O Todo App Gift Card é uma aplicação web para os clientes que ganharam um Gift Card terem acesso as informações do cartão e das transações realizadas.
+O Todo App Gift Card é uma aplicação Web para os clientes que ganharam um Gift Card terem acesso às informações do cartão e das transações realizadas.
 
 ![Screenshot from 2021-09-05 15-01-53](https://user-images.githubusercontent.com/80683232/132136887-42494c36-c9f6-4bab-923e-47128d3e2a91.png)
+
 
 ## Stack Utiliza e porque:
 - **React:**
@@ -23,6 +24,7 @@ O Todo App Gift Card é uma aplicação web para os clientes que ganharam um Gif
   - Segurança na transmissão de informações entre client e server
   - Segurança para autenticar usuários
 
+
 ## Instalação
 1. Abrir o terminal
 2. Clonar o repositótio
@@ -36,6 +38,7 @@ pip install -r requirements.txt
 ```
 npm install
 ```
+
 
 ## Rodar o ambiente de desenvolvimento
 **Em um terminal:**
@@ -51,6 +54,7 @@ python3 manage.py runserver
 ```
 npm start
 ```
+
 
 ## Teste da aplicação
 1. No 'Card Number', digite o valor '1111 2222 3333 4444' para simular um gift card que já está registrado no banco de dados
