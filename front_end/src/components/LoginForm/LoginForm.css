@@ -1,0 +1,156 @@
+.login-form__background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 57rem;
+  width: 45vw;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.login-form__central-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.login-form__image {
+  width: 125%;
+}
+
+.login-form__image-content {
+  transform: translateX(-2.5%);
+  margin-bottom: 3rem;
+  filter: invert();
+  width: 100%;
+}
+
+.login-form__titule {
+  font-size: 3rem;
+  white-space: nowrap;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.text-card-number, .text-password {
+  font-size: 2rem;
+}
+
+#input-card-number, #input-password {
+  height: 3.5rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  margin-bottom: 1.25rem;
+  background-color: lightgray;
+  font-size: 1.6rem;
+}
+
+#input-password {
+  margin-bottom: 2rem;
+}
+
+#input-email:focus, #input-card-number:focus, #input-password:focus, #input-password:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.login-form__submit-card {
+  height: 5rem;
+  width: 100%;
+  margin-top: 0rem;
+  background-color: #CF2281;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+@media(max-width: 900px) {
+  .login-form {
+    min-width: 40rem;
+    height: 70rem;
+  }
+
+  .login-form__central-box {
+    width: 38rem;
+  }
+
+  .login-form__titule {
+    font-size: 4rem;
+  }
+
+  .text-card-number, .text-password {
+    font-size: 2.5rem;
+  }
+
+  #input-card-number, #input-password {
+    height: 4.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .login-form {
+    height: 70rem;
+    min-width: 45rem;
+  }
+
+  .login-form__central-box {
+    width: 42rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .login-form {
+    height: 75rem;
+    min-width: 50rem;
+  }
+
+  .login-form__central-box {
+    width: 47rem;
+  }
+
+  .login-form__titule {
+    font-size: 4.7rem;
+  }
+
+  .text-card-number, .text-password {
+    font-size: 3rem;
+  }
+
+  #input-card-number, #input-password {
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+  .login-form__submit-card {
+    margin-top: .5rem;
+    height: 6.5rem;
+    font-size: 2.5rem;
+    line-height: 6.5rem;
+  }
+}
+
+@media(min-width: 1480px) {
+  .login-form {
+    height: 65rem;
+  }
+}

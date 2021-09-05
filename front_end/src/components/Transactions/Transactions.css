@@ -1,0 +1,23 @@
+.transactions {
+  margin-top: 10rem;
+}
+
+.transactions__titule {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.transactions__first-row * {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+}
+th, td {
+  border-bottom: 1px solid #DDD;
+  padding: 2rem 0;
+}

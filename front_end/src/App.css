@@ -1,0 +1,39 @@
+html {
+  font-size: 10px
+}
+
+@media(max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media(max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media(max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media(max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media(min-width: 1480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 1680px) {
+  html {
+    font-size: 14px;
+  }
+}

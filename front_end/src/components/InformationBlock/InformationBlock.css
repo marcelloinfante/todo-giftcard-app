@@ -1,0 +1,24 @@
+.information-block__image {
+  display: inline-block;
+  position: relative;
+  bottom: 2rem;
+  height: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 0.4rem;
+}
+
+.information-block__text {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.information-block__titule {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: .3rem 0;
+}
+
+.information-block__description {
+  font-size: 1.8rem;
+  margin: .3rem 0;
+}

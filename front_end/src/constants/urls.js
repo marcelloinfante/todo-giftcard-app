@@ -1,0 +1,8 @@
+export const BASE_API_URL = 'http://localhost:8000/todo/api/'
+export const OBTAIN_PAIR_TOKEN_URL = BASE_API_URL + 'token/'
+export const TOKEN_REFRESH_URL = BASE_API_URL + 'token/refresh/'
+export const VERIFY_ACCESS_TOKEN_URL = BASE_API_URL + 'token/verify/'
+export const LIST_USERS_URL = BASE_API_URL + 'user/'
+export const LIST_CARDS_URL = BASE_API_URL + 'card/'
+export const LIST_INTERNAL_EXTRACT_URL = BASE_API_URL + 'extract/'
+export const LIST_EXTERNAL_EXTRACT_URL = 'https://133b8793-d9dc-47b1-b2fe-4831f8859a7b.mock.pstmn.io//api/v1/gift-card/transactions'
